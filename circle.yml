@@ -9,10 +9,6 @@ dependencies:
     - docker info
 
 deployment:
-  staging:
-    branch: master
-    commands:
-      - gradle build && cp -R build/libs $CIRCLE_ARTIFACTS
   hub:
     branch: master
     commands:
