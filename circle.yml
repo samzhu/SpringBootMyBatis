@@ -1,6 +1,6 @@
 general:
   artifacts:
-    - "dist/*.*"
+    - "build/libs/*"
 
 machine:
   java:
