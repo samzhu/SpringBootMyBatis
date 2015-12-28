@@ -6,5 +6,9 @@ machine:
   java:
     version: oraclejdk8
 
-
+test:
+  override:
+    - ./gradlew build
+  post:
+    - cp -R build/libs $CIRCLE_ARTIFACTS
 
