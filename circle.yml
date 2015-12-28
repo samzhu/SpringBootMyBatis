@@ -6,6 +6,5 @@ deployment:
   staging:
     branch: master
     commands:
-      - gradle build
-      - cp -R build/libs $CIRCLE_ARTIFACTS
+      - gradle build && cp -R build/libs $CIRCLE_ARTIFACTS
 
