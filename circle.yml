@@ -17,5 +17,6 @@ deployment:
   hub:
     branch: master
     commands:
+      - gradle build && cp -R build/libs $CIRCLE_ARTIFACTS
       - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
       - docker push spike234/springboot-all
