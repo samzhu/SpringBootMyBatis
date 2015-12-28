@@ -8,3 +8,6 @@ dependencies:
   override:
     - docker info
     - docker build -t java:8 .
+
+general:
+  build_dir: api
