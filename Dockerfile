@@ -2,6 +2,6 @@ FROM ingensi/oracle-jdk
 
 MAINTAINER wiselyman
 
-COPY $CIRCLE_ARTIFACTS/*.jar /opt/
+COPY build/libs/*.jar /opt/
 
 WORKDIR /opt/
