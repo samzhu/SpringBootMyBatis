@@ -1,6 +1,6 @@
 general:
   artifacts:
-    - "target/SpringBootMyBatis-*.jar"
+    - "target/*.jar"
 
 machine:
   java:
