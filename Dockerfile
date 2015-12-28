@@ -1,6 +1,6 @@
-FROM ingensi/oracle-jdk
+FROM java:8
 
-MAINTAINER wiselyman
+MAINTAINER samzhu
 
 COPY build/libs/*.jar /opt/
 
