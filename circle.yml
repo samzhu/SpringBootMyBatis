@@ -1,6 +1,6 @@
 general:
   artifacts:
-    - "build/libs/*"
+    - "target/*.war"
 
 machine:
   java:
