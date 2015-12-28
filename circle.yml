@@ -8,7 +8,7 @@ machine:
 
 test:
   override:
-    - ./gradlew build
+    - ./gradle build
   post:
     - cp -R build/libs $CIRCLE_ARTIFACTS
 
