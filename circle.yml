@@ -1,3 +1,7 @@
+general:
+  artifacts:
+    - "target/SpringBootMyBatis-*.jar"
+
 machine:
   java:
     version: oraclejdk8
@@ -9,5 +13,4 @@ dependencies:
     - docker info
     - docker build -t java:8 .
 
-general:
-  build_dir: api
+
