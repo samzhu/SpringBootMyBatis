@@ -1,10 +1,8 @@
-general:
-  artifacts:
-    - build/libs/*.jar
-
 machine:
   java:
     version: oraclejdk8
 
-
+test:
+  post:
+    - cp -R build/libs $CIRCLE_ARTIFACTS
 
