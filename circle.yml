@@ -1,6 +1,6 @@
 general:
   artifacts:
-    - "target/*.war"
+    - "target/*.jar"
 
 machine:
   java:
