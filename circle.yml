@@ -3,6 +3,8 @@ machine:
     version: oraclejdk8
 
 test:
+  override:
+    - gradle test build
   post:
     - cp -R build/libs $CIRCLE_ARTIFACTS
 
