@@ -1,16 +1,10 @@
 general:
   artifacts:
-    - "target/*.jar"
+    - "target/*.*"
 
 machine:
   java:
     version: oraclejdk8
-  services:
-    - docker
 
-dependencies:
-  override:
-    - docker info
-    - docker build -t java:8 .
 
 
